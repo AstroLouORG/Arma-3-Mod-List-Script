@@ -1,5 +1,9 @@
 const fs = require("fs")
-let path = ("F:/Spiele/SteamGames/steamapps/common/Arma 3 Server") // Change this path, to the Server Folder, where the mod folders are located.
+
+
+let path = ("Arma 3 Server") // Change this path, to the Server Folder, where the mod folders are located.
+
+
 let array = fs.readdirSync(path)
 let names = array.filter(name => name.startsWith("@"))
     fs.writeFileSync('modlist.txt', names.join(';'))
