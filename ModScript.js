@@ -4,7 +4,7 @@ let array = fs.readdirSync(path)
 let names = array.filter(name => name.startsWith("@"))
     fs.writeFileSync('modlist.txt', names.join(';'))
 
-console.log(`SUCCESS: modlist.txt Successfully Created in ${process.cwd()}`)
+console.log(`SUCCESS: modlist.txt Successfully Created in ${process.cwd()}modlist.txt`)
 
 // Install node.js on your PC. Then run this script with "node ModScript.js"
 // It will create a file called "modlist.txt" to the path that you have given it.
